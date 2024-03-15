@@ -1,0 +1,33 @@
+ody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.rose {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 50px solid #ff0066;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    animation: bloom 4s ease-in-out infinite;
+}
+
+@keyframes bloom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+        
